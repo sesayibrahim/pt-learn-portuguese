@@ -1,0 +1,59 @@
+/* Centre the entire Portuguese-learning website */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Centre the main website content */
+body > *,
+main,
+#home,
+#vocabulary,
+#verbs,
+#grammar,
+#practice {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep the website a comfortable width */
+main,
+#home,
+#vocabulary,
+#verbs,
+#grammar,
+#practice {
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+}
+
+/* Make buttons and search fields easier to see */
+button,
+input,
+select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make the layout work on smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    main,
+    #home,
+    #vocabulary,
+    #verbs,
+    #grammar,
+    #practice {
+        width: 100%;
+    }
+}
